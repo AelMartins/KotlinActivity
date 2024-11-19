@@ -1,27 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#39ff14"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".SegundaTela">
+    android:background="@drawable/wallpaper01"
+    android:fitsSystemWindows="true"
+    tools:context=".SegundaTela"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="104dp">
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints="distance"
+        android:ems="10"
+        android:hint="@string/hint_distance"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/edit_km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_km"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints="speed"
+        android:ems="10"
+        android:hint="@string/hint_speed"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/edit_tolls"
+        app:layout_constraintStart_toStartOf="@+id/edit_distance"
+        app:layout_constraintTop_toBottomOf="@+id/edit_distance"
+    />
+
+    <EditText
+        android:id="@+id/edit_tolls"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/hint_tolls"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#263238"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/edit_km"
+        app:layout_constraintTop_toBottomOf="@+id/edit_km"
+        android:autofillHints="tolls"
+    />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="@string/button_calculate"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_tolls"
+    />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Segunda Tela"
-        android:textSize="32sp"
+        android:id="@+id/textView"
+        android:layout_width="264dp"
+        android:layout_height="286dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="50dp"
+        android:background="#9FFFFFFF"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+    />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_voltar"
-        android:layout_marginTop="10dp"/>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

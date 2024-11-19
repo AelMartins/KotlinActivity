@@ -13,8 +13,17 @@
         android:theme="@style/Theme.KotlinActivity"
         tools:targetApi="31">
         <activity
+            android:name=".QuartaTela"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".TerceiraTela"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
             android:name=".SegundaTela"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

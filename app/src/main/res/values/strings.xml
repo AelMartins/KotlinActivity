@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">KotlinActivity</string>
+    <string name="travel_calculator_button">Travel Calculator</string>
+    <string name="money_converter_button">Money Converter</string>
+    <string name="temperature_meter_button">Temperature Meter</string>
+    <string name="hint_distance">Informe a distância da viagem (Km)</string>
+    <string name="hint_speed">Informe a velocidade média esperada</string>
+    <string name="hint_tolls">Informe a quantidade de pedágios</string>
+    <string name="button_calculate">Calcular</string>
+    <string name="invalid_values_error">Valores inválidos. Verifique os valores inseridos.</string>
+    <string name="fill_all_fields_error">Preencha todos os campos para efetuar o cálculo.</string>
+    <string name="hint_real_value">Digite o valor em reais</string>
+    <string name="button_convert_to_dollars">Converter para Dólares</string>
+    <string name="result_dollars">Valor em dólares:</string>
+    <string name="invalid_value_error">Digite um valor válido</string>
+    <string name="fill_value_error">Por favor, insira um valor em reais</string>
+    <string name="result_in_dollars">Valor em dólares: US$ %.2f</string>
+    <string name="temperature_hint">Digite a temperatura</string>
+    <string name="temperature_input_description">Campo para inserir a temperatura a ser convertida</string>
+    <string name="celsius_to_fahrenheit">Celsius → Fahrenheit</string>
+    <string name="fahrenheit_to_celsius">Fahrenheit → Celsius</string>
+    <string name="result_label">Resultado: %1$.2f</string>
+    <string name="invalid_temperature_error">Digite um valor válido</string>
+    <string name="empty_temperature_error">Por favor, insira um valor de temperatura</string>
+    <string name="celsius_to_fahrenheit_button">Botão para converter Celsius para Fahrenheit</string>
+    <string name="fahrenheit_to_celsius_button">Botão para converter Fahrenheit para Celsius</string>
 </resources>
